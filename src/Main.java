@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 
@@ -81,7 +83,23 @@ public class Main {
 		scanner.close();*/
 
 		// ******************************************************** LOOPS **************************************************
+		Scanner scanner = new Scanner(System.in);
 
-		
+		System.out.println("Dammi X");
+		int x = scanner.nextInt();  // 20
+
+/*		System.out.println("Dammi Y"); // 4
+		int y = scanner.nextInt();
+
+		while (y <= x + 10) {
+			y += 4;
+			System.out.println(y); // 32
+		}*/
+
+		do {
+			System.out.println(x = x + 1);
+		} while (x < 10);
+
+
 	}
 }
