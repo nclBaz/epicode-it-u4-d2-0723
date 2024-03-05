@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
 	public static void main(String[] args) {
 
@@ -83,10 +81,10 @@ public class Main {
 		scanner.close();*/
 
 		// ******************************************************** LOOPS **************************************************
-		Scanner scanner = new Scanner(System.in);
+/*		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Dammi X");
-		int x = scanner.nextInt();  // 20
+		int x = scanner.nextInt();  // 20*/
 
 /*		System.out.println("Dammi Y"); // 4
 		int y = scanner.nextInt();
@@ -96,10 +94,31 @@ public class Main {
 			System.out.println(y); // 32
 		}*/
 
+/*
 		do {
 			System.out.println(x = x + 1);
 		} while (x < 10);
+*/
 
+/*		for (int i = 0; i <= 10; i++) {
+			if (i % 2 == 0) continue; // col continue salto l'iterazione corrente e passo alla prossima
+			System.out.println(i);
+		}*/
 
+		/*for (int i = 0; i <= 10; i++) {
+			if (i == 5) break; // col break usciamo dal loop
+			System.out.println(i);
+		}*/
+
+		est:
+		// etichetta il loop esterno per far si che sia possibile utilizzare break/continue da un loop interno ed uscire del tutto
+		for (int i = 0; i < 5; i++) {
+			if (i == 3) break;
+			for (int j = 0; j < 5; j++) {
+				if (j == 2) break est;
+				System.out.println("j --> " + j);
+			}
+			System.out.println("i --> " + i);
+		}
 	}
 }
