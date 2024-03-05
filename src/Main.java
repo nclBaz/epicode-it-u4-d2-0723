@@ -43,6 +43,45 @@ public class Main {
 			}
 		}*/
 
+/*		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Dammi X");
+		int x = scanner.nextInt();
+
+		System.out.println("Dammi Y");
+		int y = scanner.nextInt();
+
+		int z = x > y ? 100 : 1000;
+
+		switch (z) {
+			case 10: {
+				System.out.println("z è 10");
+				x++;
+				break;
+			}
+			case 100: {
+				System.out.println("z è 100");
+				break;
+			}
+			case 1000: {
+				System.out.println("z è 1000");
+				x--;
+				break;
+			}
+			default: {
+				System.out.println("Nessuno dei precedenti");
+				x++;
+				break;
+			}
+		}
+
+		System.out.println("X è uguale a: " + x);
+
+
+		scanner.close();*/
+
+		// ******************************************************** LOOPS **************************************************
+
 		
 	}
 }
